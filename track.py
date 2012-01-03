@@ -1,0 +1,2 @@
+class Track(object):
+	pass

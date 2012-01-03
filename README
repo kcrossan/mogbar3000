@@ -1,0 +1,6 @@
+mogbar3000 is a music program designed to integrate the MOG, Pandora, and Last.fm services.  It will support signing into all three services at once, using Pandora and Last.fm for playlist generation and tracking plays via Last.fm.  MOG will be used for the source of the played music, since MOG's quality is much higher than Last.fm or Pandora.  Additionally, playlists will be able to be created separately from Pandora or Last.fm.
+
+The user interface is designed to be minimal without restricting functionality.  At the top there will be functionality for interacting with the currently playing track, which includes typical operations such as play, pause, stop, next, and previous, and track seeking.
+The middle will contain a tabbed interface for switching between playlists.  The tabbed interface will also contain any additional dialogs, such as options or signing-in.
+To the right of the tab interface, a contextual interface for interacting with whatever currently has focus will be displayed.  If a tab is selected, then actions pertaining to the playlist will be displayed (such as searching for songs to add), but if a song is selected, then the interface will contain actions/info for that song.
+Finally, the bottom of the interface will contain a status bar for showing any ongoing actions being processed by the application.
