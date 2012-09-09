@@ -14,11 +14,7 @@ import mutagen
 cur_track = 0
 def main(playlist):
 	global cur_track
-	base_dir = 'G:\Kevin\Albums\FLAC CDs\The Brian Jonestown Massacre\Your Side Of Our Story'
-	base_dir = 'C:\Documents and Settings\Kevin\My Documents\My Music\The Black Keys\El Camino'
-	#base_dir = '/media/CC84434484432FEE/Documents and Settings/Kevin/My Documents/My Music/The Black Keys/El Camino'
-	#base_dir = 'C:\Documents and Settings\Kevin\My Documents\My Music\The Raconteurs\Consolers of the Lonely'
-	#base_dir = '/media/CC84434484432FEE/Documents and Settings/Kevin/My Documents/My Music/The Raconteurs/Consolers of the Lonely'
+	base_dir = 'E:\Albums\FLAC CDs\Cage The Elephant\Cage The Elephant'
 	tracks_raw = os.listdir(base_dir)
 	tracks_raw.sort()
 	print tracks_raw
@@ -69,9 +65,9 @@ def main(playlist):
 	sec = 10
 	player_set_buffer_chunks((sec * SECOND_SIZE + CHUNK_SIZE / 2) / CHUNK_SIZE)
 
-	#set output device
-	player_set_op(String('waveout'))
-	#mixer_open()
+	#set output device to default
+	player_set_op(None)
+	mixer_open()
 
 	#interface = interfacer.Interfacer(options.load(), cmus.Cmus)
 	#interface.get_next_track = next_track

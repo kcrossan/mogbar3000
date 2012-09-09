@@ -50,8 +50,8 @@ class Cmus(object):
 		sec = 10
 		player_set_buffer_chunks((sec * SECOND_SIZE + CHUNK_SIZE / 2) / CHUNK_SIZE)
 
-		#set output device
-		player_set_op(String('alsa'))
+		#set output device to default
+		player_set_op(None)
 		mixer_open()
 
 	def __check_error(self):
